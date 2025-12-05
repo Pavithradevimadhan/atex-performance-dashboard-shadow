@@ -1,12 +1,23 @@
 
 import * as React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import DropdownMenu from '../Components/DropdownMenu';
+import Home from './Home';
+import KPI from './KPI';
+import TestThroughputPage from './TestThroughputPage';
+import AnomalyDetection from './AnomalyDetection';
+import CapacityPlanning from './CapacityPlanning';
+import Datasheet from './Datasheet';
+import PredictiveMaintenance from './PredictiveMaintenance';
+import PreventiveMaintenance from './PreventiveMaintenance';
+import ResourceUtilization from './ResourceUtilization';
+import StatisticalProcessControl from './StatisticalProcessControl';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <div>
+    <Router>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -21,6 +32,18 @@ export default function HomePage() {
           <DropdownMenu />
         </Toolbar>
       </AppBar>
-    </div>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/kpi" element={<KPI />} />
+        <Route path="/test-throughput" element={<TestThroughputPage />} />
+        <Route path="/anomaly-detection" element={<AnomalyDetection />} />
+        <Route path="/capacity-planning" element={<CapacityPlanning />} />
+        <Route path="/datasheet" element={<Datasheet />} />
+        <Route path="/preventive-maintenance" element={<PreventiveMaintenance />} />
+        <Route path="/predictive-maintenance" element={<PredictiveMaintenance />} />
+        <Route path="/resource-utilization" element={<ResourceUtilization />} />
+        <Route path="/statistical-process-control" element={<StatisticalProcessControl />} />
+      </Routes>
+    </Router>
   );
 }
