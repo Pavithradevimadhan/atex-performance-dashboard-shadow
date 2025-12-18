@@ -7,7 +7,10 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
+<<<<<<< HEAD
     "@mui/x-date-pickers": "^8.21.0",
+=======
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
     "@reduxjs/toolkit": "^2.11.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -18,7 +21,10 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "chart.js": "^4.5.1",
+<<<<<<< HEAD
     "dayjs": "^1.11.19",
+=======
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
     "react": "^19.2.0",
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.0",

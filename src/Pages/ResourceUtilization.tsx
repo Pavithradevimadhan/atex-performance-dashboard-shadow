@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 import React from "react";
 import { Typography, Container } from "@mui/material";
@@ -30,6 +31,21 @@ const ResourceUtilization: React.FC = () => {
           showSecondaryAxis={false} // set true if units differ
         />
       </div>
+=======
+
+import React from "react";
+import { Typography, Container } from "@mui/material";
+
+const ResourceUtilization: React.FC = () => {
+  return (
+    <Container>
+      <Typography variant="h4" gutterBottom>
+        Resource Utilization
+      </Typography>
+      <Typography>
+        This is the Resource Utilization page. Show resource usage charts here.
+      </Typography>
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
     </Container>
   );
 };

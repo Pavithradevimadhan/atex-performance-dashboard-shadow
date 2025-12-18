@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  import React from "react";
 import {
   Container,
@@ -565,3 +566,23 @@ const KPI: React.FC = () => {
   );
 };
 export default KPI;
+=======
+
+import React from "react";
+import { Typography, Container } from "@mui/material";
+
+const KPI: React.FC = () => {
+  return (
+    <Container>
+      <Typography variant="h4" gutterBottom>
+        KPI Dashboard
+      </Typography>
+      <Typography>
+        This is the KPI page. Add charts and metrics here.
+      </Typography>
+    </Container>
+  );
+};
+
+export default KPI;
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384

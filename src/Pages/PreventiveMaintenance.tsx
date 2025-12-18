@@ -10,7 +10,11 @@ import {
   Box,
   Stack,
 } from "@mui/material";
+<<<<<<< HEAD
 import PieChart from "../Charts/PieChart"; // adjust path if needed
+=======
+import PieChart from "../Pages/PieChart"; // adjust path if needed
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
 
 const PreventiveMaintenance: React.FC = () => {
   const labels = ["Scheduled", "Completed", "Overdue", "In Progress", "Deferred"];
@@ -68,7 +72,10 @@ const PreventiveMaintenance: React.FC = () => {
 export default  PreventiveMaintenance;
 
 
+<<<<<<< HEAD
 //   addding via axios
+=======
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
 
 // import React from "react";
 // import {

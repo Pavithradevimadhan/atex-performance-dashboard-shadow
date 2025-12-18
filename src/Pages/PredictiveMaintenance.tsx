@@ -1,7 +1,11 @@
 
 import React from "react";
 import { Typography, Container, Box, Paper } from "@mui/material";
+<<<<<<< HEAD
 import DoughnutChart from "../Charts/DoughnutChart";
+=======
+import DoughnutChart from "../Pages/DoughnutChart";
+>>>>>>> c761d02aacc32443fc1a2a7d72b514d1aadd7384
 
 const PredictiveMaintenance: React.FC = () => {
   // Example data you can replace with real values
