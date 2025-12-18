@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // {
 //   "compilerOptions": {
 //     "target": "es5",
@@ -46,4 +47,31 @@
     "noEmit": true
   },
   "include": ["src"]
+=======
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 }

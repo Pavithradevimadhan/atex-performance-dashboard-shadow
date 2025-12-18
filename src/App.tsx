@@ -9,6 +9,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+<<<<<<< HEAD
 
 
 
@@ -26,3 +27,5 @@ export default App;
 // };
 
 // export default App;
+=======
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623

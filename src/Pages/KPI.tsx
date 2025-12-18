@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // import React, { useState } from "react";
 // import ChartCard from "../Components/ChartCard";
 // import { BarChart, LineChart, ScatterChart, DoughnutChart, PieChart,} from "../Charts";
@@ -464,6 +465,21 @@
 //         </ChartCard>
 //       </div>
 //     </div>
+=======
+// import React from "react";
+// import { Typography, Container } from "@mui/material";
+
+// const KPI: React.FC = () => {
+//   return (
+//     <Container>
+//       <Typography variant="h4" gutterBottom>
+//         KPI Dashboard
+//       </Typography>
+//       <Typography>
+//         This is the KPI page. Add charts and metrics here.
+//       </Typography>
+//     </Container>
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 //   );
 // };
 
@@ -471,6 +487,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 import React from "react";
@@ -621,8 +638,43 @@ const KPI: React.FC = () => {
           </div>
         </ChartCard>
       </div>
+=======
+// src/Pages/KPI.tsx
+import React from "react";
+import LineChart from "../Components/LineChart";
+
+const KPI: React.FC = () => {
+  
+  const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug","Sept","Oct","Nov","Dec"];
+  const throughput = [140, 10, 135, 160, 180, 120, 190,400,360,401,200];
+
+  
+  return (
+    <div style={{ padding: "1rem" }}>
+      <h2 style={{ marginBottom: "1rem" }}>KPI Dashboard</h2>
+
+      {/* Single line chart */}
+      <LineChart
+        labels={labels}
+        data={throughput}
+        title="Monthly Throughput"
+        color="#10b981" 
+      />
+
+      {/* Example: second chart for error rate */}
+      {/* <LineChart
+        labels={labels}
+        data={[5, 4, 6, 3, 2, 4, 3]}
+        title="Error Rate (%)"
+        color="#ef4444"
+      /> */}
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default KPI;
+=======
+export default KPI;
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623

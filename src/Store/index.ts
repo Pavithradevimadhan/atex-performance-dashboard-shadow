@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { configureStore } from '@reduxjs/toolkit';
 
 // export const store = configureStore({
@@ -38,9 +39,19 @@ export const store = configureStore({
   reducer: {
     // some: someSlice,
   },
+=======
+import { configureStore } from '@reduxjs/toolkit';
+
+export const store = configureStore({
+    reducer: {
+    },
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 });
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+<<<<<<< HEAD
 
 export default store;
+=======
+>>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
