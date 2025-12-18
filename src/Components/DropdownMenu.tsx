@@ -121,7 +121,6 @@
 //     );
 // }
 
-<<<<<<< HEAD
 // import * as React from 'react';
 // import { alpha, Button, Menu, MenuItem, MenuProps, styled } from '@mui/material';
 // import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -412,17 +411,10 @@ export type DropdownMenuProps = {
   menuProps?: Partial<MenuProps>;         // pass extra props to Menu
   onItemClick?: (item: DropdownItem) => void; // callback when an item is clicked
 };
-=======
-import * as React from 'react';
-import { alpha, Button, Menu, MenuItem, MenuProps, styled } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { Link } from 'react-router-dom';
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
     elevation={0}
-<<<<<<< HEAD
     anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
     transformOrigin={{ vertical: "top", horizontal: "right" }}
     {...props}
@@ -446,44 +438,10 @@ const StyledMenu = styled((props: MenuProps) => (
     gap: theme.spacing(1.5),
     "&:active": {
       backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
-=======
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'right',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'right',
-    }}
-    {...props}
-  />
-))(({ theme }) => ({
-  '& .MuiPaper-root': {
-    borderRadius: 6,
-    marginTop: theme.spacing(1),
-    minWidth: 200,
-    color: theme.palette.mode === 'dark' ? theme.palette.grey[300] : 'rgb(55, 65, 81)',
-    boxShadow:
-      'rgb(255, 255, 255) 0px 0px 0px 0px, ' +
-      'rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, ' +
-      'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, ' +
-      'rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-  },
-  '& .MuiMenu-list': {
-    padding: '4px 0',
-  },
-  '& .MuiMenuItem-root': {
-    '&:active': {
-      backgroundColor: alpha(
-        theme.palette.primary.main,
-        theme.palette.action.selectedOpacity
-      ),
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
     },
   },
 }));
 
-<<<<<<< HEAD
 const DropdownMenu: React.FC<DropdownMenuProps> = ({
   id = "dropdown-button",
   buttonLabel = "Other Modules",
@@ -576,68 +534,3 @@ export const ModulesDropdown: React.FC = () => {
     />
   );
 };
-=======
-export default function DropdownMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <div>
-      <Button
-        id="modules-button"
-        aria-controls={open ? 'modules-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        color="inherit"
-        variant="text"            // use text to blend with AppBar; change to 'contained' if you prefer
-        disableElevation
-        onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
-        sx={{ ml: 1 }}
-      >
-        Other Modules
-      </Button>
-
-      <StyledMenu
-        id="modules-menu"
-        slotProps={{
-          list: { 'aria-labelledby': 'modules-button' },
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        {/* Each MenuItem navigates to a route */}
-        <MenuItem component={Link} to="/anomaly-detection" onClick={handleClose}>
-          Anomaly Detection
-        </MenuItem>
-        <MenuItem component={Link} to="/capacity-planning" onClick={handleClose}>
-          Capacity Planning
-        </MenuItem>
-        <MenuItem component={Link} to="/datasheet" onClick={handleClose}>
-          Datasheets
-        </MenuItem>
-        <MenuItem component={Link} to="/predictive-maintenance" onClick={handleClose}>
-          Predictive Maintenance
-        </MenuItem>
-        <MenuItem component={Link} to="/preventive-maintenance" onClick={handleClose}>
-          Preventive Maintenance
-        </MenuItem>
-        <MenuItem component={Link} to="/resource-utilization" onClick={handleClose}>
-          Resource Utilization
-        </MenuItem>
-        <MenuItem component={Link} to="/statistical-process-control" onClick={handleClose}>
-          Statistical Process Control
-        </MenuItem>
-      </StyledMenu>
-    </div>
-  );
-}
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623

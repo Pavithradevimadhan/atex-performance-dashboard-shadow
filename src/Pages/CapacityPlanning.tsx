@@ -1,26 +1,3 @@
-
-<<<<<<< HEAD
-// import React from "react";
-// import { Typography, Container } from "@mui/material";
-
-// const CapacityPlanning: React.FC = () => {
-//   return (
-//     <Container>
-//       <Typography variant="h4" gutterBottom>
-//         Capacity Planning
-//       </Typography>
-//       <Typography>
-//         This is the Capacity Planning page. Add planning tools here.
-//       </Typography>
-//     </Container>
-//   );
-// };
-
-// export default CapacityPlanning;
-
-
-
-
 import React from "react";
 import ScatterChart from "../Charts/ScatterChart";
 
@@ -83,21 +60,6 @@ const CapacityPlanning: React.FC = () => {
         />
       </div>
     </div>
-=======
-import React from "react";
-import { Typography, Container } from "@mui/material";
-
-const CapacityPlanning: React.FC = () => {
-  return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
-        Capacity Planning
-      </Typography>
-      <Typography>
-        This is the Capacity Planning page. Add planning tools here.
-      </Typography>
-    </Container>
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
   );
 };
 

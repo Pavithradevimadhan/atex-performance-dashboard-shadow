@@ -22,7 +22,6 @@
 
 // src/Pages/Datasheet.tsx
 import React from "react";
-<<<<<<< HEAD
 import BarChart from "../Charts/BarChart";
 
 const Datasheet: React.FC = () => {
@@ -30,16 +29,6 @@ const Datasheet: React.FC = () => {
   const labels = ["Prd A", "Prd B", "Prd C", "Prd D","Prd E","Prd F","Prd G"];
   const values = [120, 90, 150, 80,100,150,130,140];
  
-=======
-import BarChart from "../Components/BarChart";
-
-const Datasheet: React.FC = () => {
-  const labels = ["Product A", "Product B", "Product C", "Product D"];
-  const values = [120, 90, 150, 80];
-
-  // Adjust this if your top app bar height is different (e.g., 64px)
-  const chartHeight = "calc(100vh - 140px)"; // viewport height minus header & padding
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 
   return (
     <div style={{ padding: "16px" }}>
@@ -48,11 +37,7 @@ const Datasheet: React.FC = () => {
       <div
         style={{
           width: "100%",
-<<<<<<< HEAD
           maxWidth: "400px",      // optional: keep the chart from getting too wide on huge screens
-=======
-          maxWidth: "1200px",      // optional: keep the chart from getting too wide on huge screens
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
           margin: "0 auto",        // center the chart
           background: "#fff",      // optional
           borderRadius: 8,         // optional

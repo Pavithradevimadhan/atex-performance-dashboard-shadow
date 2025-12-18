@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 // import * as React from 'react';
 // import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 // import { Link} from 'react-router-dom';
@@ -57,12 +56,6 @@ import * as React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ModulesDropdown } from '../Components/DropdownMenu'; // ✅ import the wrapper
-=======
-import * as React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { Link} from 'react-router-dom';
-import DropdownMenu from '../Components/DropdownMenu';
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 import Home from './Home';
 import KPI from './KPI';
 import TestThroughputPage from './TestThroughputPage';
@@ -74,11 +67,8 @@ import PreventiveMaintenance from './PreventiveMaintenance';
 import ResourceUtilization from './ResourceUtilization';
 import StatisticalProcessControl from './StatisticalProcessControl';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
 import '../Pages/Dashboard.css';
 
-=======
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
 
 export default function HomePage() {
   return (
@@ -88,15 +78,10 @@ export default function HomePage() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             ATEX PERFORMANCE DASHBOARD
           </Typography>
-<<<<<<< HEAD
-
-=======
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
           {/* Main Navigation Buttons */}
           <Button color="inherit" component={Link} to="/home">Home</Button>
           <Button color="inherit" component={Link} to="/kpi">KPI</Button>
           <Button color="inherit" component={Link} to="/test-throughput">Test Throughput</Button>
-<<<<<<< HEAD
           <Button color="inherit" component={Link} to="/dashboard">Dashboard</Button>
 
           {/* Dropdown for Other Modules */}
@@ -104,13 +89,6 @@ export default function HomePage() {
         </Toolbar>
       </AppBar>
 
-=======
-          
-          {/* Dropdown for Other Modules */}
-          <DropdownMenu />
-        </Toolbar>
-      </AppBar>
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/kpi" element={<KPI />} />
@@ -118,10 +96,7 @@ export default function HomePage() {
         <Route path="/anomaly-detection" element={<AnomalyDetection />} />
         <Route path="/capacity-planning" element={<CapacityPlanning />} />
         <Route path="/datasheet" element={<Datasheet />} />
-<<<<<<< HEAD
         
-=======
->>>>>>> 624764d01e1d200866f525e46c2c4b525f3f1623
         <Route path="/preventive-maintenance" element={<PreventiveMaintenance />} />
         <Route path="/predictive-maintenance" element={<PredictiveMaintenance />} />
         <Route path="/resource-utilization" element={<ResourceUtilization />} />
